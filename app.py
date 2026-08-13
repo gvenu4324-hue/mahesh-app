@@ -5,7 +5,7 @@ from ollama import Client
 client = Client(host="http://localhost:11434")
 
 st.set_page_config(
-    page_title="Custom Matta Mahesh Goud - Ollama",
+    page_title="Custom LLM Model by Matta Mahesh Goud - Ollama",
     layout="centered"
 )
 
