@@ -14,12 +14,12 @@ st.title("Matta Mahesh Goud - Ollama App")
 prompt = st.text_area("Enter your prompt:", height=200)
 
 if st.button("Generate Response"):
-    if prompt.strip() == "gemma3:270m":
+    if prompt.strip() :
         st.warning("Please enter a prompt.")
     else:
         with st.spinner("Thinking..."):
             response = client.chat(
-                model="gemma3:270m",
+                model="deepseek-r1:1.5b",
                 messages=[
                     {"role": "user", "content": prompt}
                 ]
